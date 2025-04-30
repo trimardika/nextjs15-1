@@ -1,0 +1,129 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100vh;
+}
+
+.form {
+  min-height: 100vh;
+  max-width: rem(450);
+  padding-top: rem(30);
+  padding-bottom: rem(80);
+}
+
+.form2 {
+  min-height: 100vh;
+  /* padding-top: rem(50); */
+  /* padding-bottom: rem(50); */
+  background-image: url('/images/login-img-addon-2-blur.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family: Greycliff CF, var(--mantine-font-family);
+}
+
+.wrapperComp{
+  display: flex;
+}
+
+.imgSRC{
+  /* background-image: url('/images/login-img-addon-2.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center center; */
+  /* width: 100%; */
+  /* height: auto; */
+
+  width: 600px;
+  height: 600px;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    width: 400px;
+    height: 400px;
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.imageComp{
+  min-height: 100vh;
+  flex-grow: 1;
+  /* background-color: purple; */
+  background-image: url('/images/login-img-addon-2-blur.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 40px; */
+  /* border-width: 24px 24px 24px 24px; */
+  /* border-color: #fff; */
+  /* border-style: solid; */
+  /* border-radius: 2.5rem; */
+  position: relative;
+}
+
+.formComp{
+  min-height: 100vh;
+  width: 550px;
+  background-color: '#eee';
+  padding-top: 70px;
+  padding-bottom: 50px;
+  
+  padding-left: 75px;
+  padding-right: 75px;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 450px;
+
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: $mantine-breakpoint-sm) {
+  /* .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form2{
+    display: none;
+  } */
+
+  .imageComp{
+    display: none;
+  }
+
+  .formComp{
+    max-width: 100%;
+    flex-grow: 1;
+  }
+}
