@@ -48,7 +48,8 @@ export const role = {
 
 export const utils = {
   dev: {
-    ip: '10.128.126.163',
+    // ip: '10.128.126.163',
+    ip: 'https://veccani.com/nextjs15.1/api',
     port: '3899',
   },
   metaData: {

@@ -32,7 +32,7 @@ const SubPage1 = () => {
 
     axios({
       method: 'post',
-      url: `http://${utils.dev.ip}/days/auth/test`,
+      url: `${utils.dev.ip}/auth/test`,
       data: {},
       headers: { 'Content-Type': 'application/json' },
       withCredentials: true

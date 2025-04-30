@@ -38,7 +38,7 @@ const LoginComponent = () => {
 
     axios({
       method: 'post',
-      url: `http://${utils.dev.ip}/days/auth/authentication_signin`,
+      url: `${utils.dev.ip}/auth/authentication_signin`,
       data: formDT,
       headers: formDTHeader,
       withCredentials: true,
