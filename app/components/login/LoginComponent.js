@@ -22,11 +22,6 @@ const LoginComponent = () => {
     loadingCheckAuth: true,
   })
 
-  React.useEffect(() => {
-    const cookies = document.cookie;
-    console.log('hai', cookies);
-  }, [])
-
   const handleLogin = () => {
     setData(d => ({ ...d, loadingLogin: true }));
 
@@ -57,6 +52,8 @@ const LoginComponent = () => {
           setData(d => ({ ...d, loadingLogin: false }));
           console.log('Failed to login. ', err.message)
         })
+
+        // router.push('/dashboard/sub1');
       }
 
       if (response.data.status === 'user-not-found') {

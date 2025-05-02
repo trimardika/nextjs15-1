@@ -16,8 +16,13 @@ const ThemeProvider = ({ children }) => {
       withNormalizeCSS
       // theme={{ colorScheme }}
       // colorSchemeManager={colorSchemeManager}
-      defaultColorScheme='auto'
-      theme={colorSchemeManager.get('light')}
+      // defaultColorScheme={colorSchemeManager.get('light')}
+      defaultColorScheme='light'
+      // theme={colorSchemeManager.get('light')}
+
+      theme={{
+        activeClassName: '',
+      }}
     >
       {children}
     </MantineProvider>

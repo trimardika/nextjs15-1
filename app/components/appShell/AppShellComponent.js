@@ -14,7 +14,7 @@ const AppShellComponent = ({ children }) => {
     <AppShell
       header={{ height: 60 }}
       navbar={{
-        width: 300,
+        width: 280,
         breakpoint: 'sm',
         collapsed: { mobile: !mobileOpened, desktop: !desktopOpened },
       }}
@@ -29,10 +29,20 @@ const AppShellComponent = ({ children }) => {
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
-        <NavbarLeft />
+        <NavbarLeft
+          fnCloseNavbarLeft={() => toggleMobile(false)}
+        />
       </AppShell.Navbar>
 
       <AppShell.Main>
+        <button
+          onClick={() => {
+            toggleDesktop(false)
+          }}
+        >
+          Close desktop
+        </button>
+
         {children}
       </AppShell.Main>
     </AppShell>

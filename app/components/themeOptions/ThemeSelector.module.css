@@ -1,0 +1,29 @@
+.light{
+  background-color: yellow;
+  color: black;
+}
+
+.dark{
+  background-color: darkblue;
+  color: white;
+}
+
+.dark {
+  @mixin dark {
+    display: none;
+  }
+
+  @mixin light {
+    display: block;
+  }
+}
+
+.light {
+  @mixin light {
+    display: none;
+  }
+
+  @mixin dark {
+    display: block;
+  }
+}

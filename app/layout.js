@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <head>
         <ColorSchemeScript
-          defaultColorScheme='auto'
+        // defaultColorScheme='auto'
         />
       </head>
 
