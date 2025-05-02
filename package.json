@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 10.128.126.163 -p 3899 --turbopack",
+    "dev": "next dev -H 192.168.165.95 -p 3899 --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,6 +13,7 @@
     "@mantine/hooks": "^7.17.5",
     "@tabler/icons-react": "^3.31.0",
     "axios": "^0.27.2",
+    "clsx": "^2.1.1",
     "jsonwebtoken": "^9.0.2",
     "next": "15.3.1",
     "react": "^19.0.0",
